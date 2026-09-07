@@ -1,21 +1,75 @@
 <!doctype html>
 <html lang="mn">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Khishigdelger — миний хувийн орон зай. Instagram-аар холбогдоорой.">
-<meta name="theme-color" content="#101717"><title>Khishigdelger · Танилцъя</title>
-<style>
-:root{color-scheme:dark;--bg:#101717;--ink:#f4f5ee;--muted:#b0bbb5;--accent:#d5f77f;--line:#34413b}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:1.6}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--accent);outline-offset:8px}.wrap{width:min(1240px,calc(100% - 96px));margin:auto}header{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:108px;border-bottom:1px solid var(--line)}.brand{font-size:24px;font-weight:700;letter-spacing:-1px}.dot{color:var(--accent)}nav{display:flex;gap:34px;font-size:15px}nav a:hover{color:var(--accent)}.hero{position:relative;padding:90px 0 85px;display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center}.eyebrow{font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin:0 0 28px}.hero h1{font-weight:500;font-size:clamp(55px,7.5vw,108px);letter-spacing:-5px;line-height:1.05;margin:0 0 32px}.hero h1 span{color:var(--accent)}.intro{color:var(--muted);font-size:20px;max-width:470px;margin:0 0 36px}.button{display:inline-flex;align-items:center;justify-content:space-between;gap:32px;background:var(--accent);color:#142011;padding:17px 25px;border-radius:100px;font-weight:700;font-size:16px;transition:transform .2s,background .2s}.button:hover{transform:translateY(-3px);background:#e4ffa9}.profile{position:relative;min-height:390px;background:#1e2b24;border:1px solid #3b4d3d;border-radius:200px 200px 20px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}.monogram{font-family:Georgia,serif;font-style:italic;font-size:240px;line-height:1;color:var(--accent);transform:rotate(-8deg);padding-right:24px}.profile small{color:#c1ccb9;letter-spacing:4px;font-size:13px;margin-top:30px}.section{border-top:1px solid var(--line);padding:55px 0;display:grid;grid-template-columns:1fr 2fr;gap:50px}.section-label{font-size:14px;color:var(--muted);margin:6px 0}.section-label span{color:var(--accent);margin-right:20px}.section h2{font-size:clamp(28px,4vw,44px);line-height:1.25;font-weight:400;letter-spacing:-1px;margin:0 0 20px}.section p{max-width:600px;color:var(--muted);margin:0}.contact{background:var(--accent);color:#182113;border-radius:22px;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:25px;margin:20px 0 65px}.contact h2{font-size:36px;font-weight:500;margin:0 0 8px;line-height:1.2;letter-spacing:-1px}.contact p{margin:0;font-size:16px}.contact a{background:#17231a;color:#f4f5ee;padding:18px 25px;border-radius:60px;font-size:16px;white-space:nowrap}.contact a:hover{background:#324632}footer{border-top:1px solid var(--line);padding:26px 0 32px;display:flex;justify-content:space-between;gap:20px;font-size:14px;color:var(--muted)}footer a:hover{color:var(--accent)}.skip{position:fixed;top:-100px;left:20px;background:var(--accent);color:#101717;padding:12px;z-index:10}.skip:focus{top:10px}@media(max-width:760px){.wrap{width:calc(100% - 40px)}header{min-height:88px}.brand{font-size:21px}nav{gap:18px;font-size:14px}.hero{padding:55px 0;grid-template-columns:1fr;gap:38px}.hero h1{font-size:clamp(48px,11vw,76px);letter-spacing:-2.5px}.intro{font-size:18px}.profile{min-height:270px;border-radius:150px 150px 18px 18px;max-width:400px;width:100%;justify-self:center}.monogram{font-size:170px}.profile small{margin-top:12px}.section{grid-template-columns:1fr;gap:24px;padding:36px 0}.contact{padding:28px;flex-direction:column;align-items:flex-start;margin:15px 0 40px}.contact h2{font-size:30px}footer{flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Khishigdelger — ногоон cyber орон зай.">
+  <meta name="theme-color" content="#06130d">
+  <title>Khishigdelger | Cyber Space</title>
+  <style>
+    :root { color-scheme: dark; --bg:#06130d; --panel:#091e14; --green:#69ff9a; --lime:#caff65; --text:#e9fff0; --muted:#a8c9b4; --line:rgba(105,255,154,.26); }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; }
+    body { margin:0; min-height:100vh; overflow-x:hidden; background:var(--bg); color:var(--text); font:16px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; }
+    body::before { content:""; position:fixed; inset:0; pointer-events:none; opacity:.22; background:linear-gradient(rgba(105,255,154,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(105,255,154,.055) 1px,transparent 1px); background-size:40px 40px; mask-image:linear-gradient(to bottom,black,transparent); }
+    body::after { content:""; position:fixed; inset:0; pointer-events:none; opacity:.08; background:repeating-linear-gradient(0deg,transparent 0 3px,#d8ffe5 4px); }
+    a { color:inherit; text-decoration:none; } a:focus-visible { outline:2px solid var(--lime); outline-offset:6px; }
+    .wrap { width:min(1140px, calc(100% - 40px)); margin:auto; position:relative; }
+    header { min-height:90px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); }
+    .brand { color:var(--green); font-weight:800; letter-spacing:.08em; text-transform:uppercase; } .cursor { color:var(--lime); animation:blink 1s step-end infinite; }
+    nav { display:flex; gap:24px; color:var(--muted); font-size:13px; } nav a:hover { color:var(--green); }
+    .hero { min-height:630px; display:grid; grid-template-columns:1.3fr .7fr; gap:55px; align-items:center; padding:72px 0; }
+    .eyebrow,.label { color:var(--green); letter-spacing:.16em; text-transform:uppercase; font-size:12px; } .eyebrow::before { content:"// "; color:var(--lime); }
+    h1 { margin:18px 0 24px; max-width:720px; font:700 clamp(47px,8vw,92px)/.98 Arial,sans-serif; letter-spacing:-.07em; } h1 span { color:var(--green); text-shadow:0 0 22px rgba(105,255,154,.45); }
+    .intro { max-width:520px; color:var(--muted); font-size:18px; }
+    .buttons { display:flex; flex-wrap:wrap; gap:12px; margin-top:35px; }
+    .button { display:inline-flex; align-items:center; gap:11px; padding:14px 19px; border:1px solid var(--green); background:rgba(105,255,154,.08); color:var(--green); font-weight:700; transition:.2s ease; }
+    .button:hover { transform:translateY(-3px); background:var(--green); color:#041009; box-shadow:0 0 28px rgba(105,255,154,.28); } .button.mail { border-color:var(--line); color:var(--text); }
+    .facebook-icon { width:20px; height:20px; fill:currentColor; flex:none; }
+    .terminal { border:1px solid var(--line); background:linear-gradient(145deg,rgba(18,67,37,.7),rgba(4,17,11,.96)); box-shadow:0 0 50px rgba(53,255,132,.1),inset 0 0 30px rgba(105,255,154,.04); }
+    .terminal-top { padding:11px 14px; border-bottom:1px solid var(--line); color:var(--muted); font-size:11px; } .lights { color:var(--lime); letter-spacing:3px; }
+    .terminal-body { padding:28px; min-height:320px; display:flex; flex-direction:column; justify-content:center; } .terminal-body p { margin:6px 0; color:var(--muted); font-size:13px; } .terminal-body strong { display:block; color:var(--green); font:700 58px/.9 Arial,sans-serif; letter-spacing:-.08em; margin:16px 0; }
+    .terminal-body .online { color:var(--lime); } .terminal-body .online::before { content:"● "; }
+    .section { display:grid; grid-template-columns:180px 1fr; gap:45px; padding:65px 0; border-top:1px solid var(--line); } h2 { margin:0 0 14px; font:600 clamp(28px,4vw,45px)/1.1 Arial,sans-serif; letter-spacing:-.04em; } .section p:not(.label) { max-width:640px; color:var(--muted); }
+    .contact { margin:0 0 65px; padding:38px; border:1px solid var(--green); background:rgba(105,255,154,.07); display:flex; align-items:center; justify-content:space-between; gap:26px; } .email { color:var(--lime); font-size:clamp(16px,2.5vw,24px); overflow-wrap:anywhere; }
+    footer { display:flex; justify-content:space-between; gap:20px; padding:25px 0 35px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; } footer a { color:var(--green); }
+    @keyframes blink { 50% { opacity:0; } }
+    @media (max-width:760px) { .hero { min-height:auto; grid-template-columns:1fr; gap:30px; padding:55px 0; } .terminal { max-width:430px; width:100%; } .section { grid-template-columns:1fr; gap:18px; padding:44px 0; } .contact { padding:26px; align-items:flex-start; flex-direction:column; } nav { gap:14px; font-size:11px; } footer { flex-direction:column; } }
+  </style>
 </head>
 <body>
-<a class="skip" href="#main">Үндсэн хэсэг рүү</a>
-<div class="wrap">
-<header><a class="brand" href="#">Khishigdelger<span class="dot">.</span></a><nav aria-label="Үндсэн цэс"><a href="#about">Миний тухай</a><a href="#contact">Холбогдох ↗</a></nav></header>
-<main id="main">
-<section class="hero" aria-labelledby="hello"><div><p class="eyebrow">Миний хувийн орон зай</p><h1 id="hello">Сайн уу,<br>би <span>Хишигдэлгэр.</span></h1><p class="intro">Миний сайтад тавтай морил.<br>Танилцаж, холбоотой байцгаая.</p><a class="button" href="https://www.instagram.com/khishigdelgep/" target="_blank" rel="noopener noreferrer">Instagram-аар холбогдох <span aria-hidden="true">↗</span></a></div><div class="profile" aria-hidden="true"><div class="monogram">K.</div><small>KHISHIGDELGER</small></div></section>
-<section class="section" id="about"><p class="section-label"><span>01</span>Миний тухай</p><div><h2>Эндээс танилцъя.</h2><p>Энэ бол миний хувийн хуудас. Миний өдөр тутмын мөчүүдийг Instagram-аас сонирхож, хүссэн үедээ зурвас үлдээгээрэй.</p></div></section>
-<section class="section" id="contact"><p class="section-label"><span>02</span>Холбоо барих</p><div><h2>Нэг мэндчилгээнээс эхэлье.</h2><p>Надтай холбогдохыг хүсвэл Instagram-аар бичээрэй.</p></div></section>
-<div class="contact"><div><h2>Холбоотой байцгаая.</h2><p>@khishigdelgep</p></div><a href="https://www.instagram.com/khishigdelgep/" target="_blank" rel="noopener noreferrer">Instagram нээх ↗</a></div>
-</main><footer><span>© 2026.09.07Khishigdelger buteev </span><a href="#">Дээш буцах ↑</a></footer>
-</div></body></html>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#top">Khishigdelger<span class="cursor">_</span></a>
+      <nav aria-label="Үндсэн цэс"><a href="#about">ТУХАЙ</a><a href="#contact">ХОЛБОО БАРИХ</a></nav>
+    </header>
+    <main id="top">
+      <section class="hero" aria-labelledby="title">
+        <div>
+          <p class="eyebrow">private network / 2026</p>
+          <h1 id="title">Сайн уу,<br>би <span>Хишигдэлгэр.</span></h1>
+          <p class="intro">Ногоон ертөнцөд тавтай морил. Эндээс надтай холбогдож, миний Facebook хуудсаар зочлоорой.</p>
+          <div class="buttons">
+            <a class="button" href="https://www.facebook.com/khishig123/" target="_blank" rel="noopener noreferrer" aria-label="Khishigdelger-ийн Facebook хуудас нээх">
+              <svg class="facebook-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.03 4.39 11.03 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.7 4.53-4.7 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.89v2.26h3.34l-.53 3.49h-2.81V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+              Facebook руу орох ↗
+            </a>
+            <a class="button" href="https://www.instagram.com/khishigdelgep/" target="_blank" rel="noopener noreferrer" aria-label="Khishigdelger-ийн Instagram хуудас нээх">
+              <svg class="facebook-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-3.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg>
+              Instagram руу орох ↗
+            </a>
+            <a class="button mail" href="mailto:khishigdelger16@yahoo.com">Имэйл илгээх ↗</a>
+          </div>
+        </div>
+        <aside class="terminal" aria-label="Профайлын мэдээлэл">
+          <div class="terminal-top"><span class="lights">● ● ●</span> &nbsp; profile.exe</div>
+          <div class="terminal-body"><p>&gt; user.identity</p><strong>K.</strong><p class="online">STATUS: ONLINE</p><p>&gt; channels: Facebook + Instagram</p></div>
+        </aside>
+      </section>
+      <section class="section" id="about"><p class="label">01 / Миний тухай</p><div><h2>Танилцъя.</h2><p>Энэ бол Хишигдэлгэрийн хувийн cyber орон зай. Миний өдөр тутмын зүйлс болон шинэ мэдээг Facebook, Instagram хуудсуудаар сонирхоорой.</p></div></section>
+      <section class="section" id="contact"><p class="label">02 / Холбоо барих</p><div><h2>Нэг мэндчилгээнээс эхэлье.</h2><p>Facebook дээр зурвас үлдээх эсвэл доорх имэйл хаягаар шууд холбогдоорой.</p></div></section>
+      <section class="contact" aria-label="Холбоо барих сонголтууд"><div><p class="label">direct channel</p><a class="email" href="mailto:khishigdelger16@yahoo.com">khishigdelger16@yahoo.com</a></div><div class="buttons"><a class="button" href="https://www.facebook.com/khishig123/" target="_blank" rel="noopener noreferrer"><svg class="facebook-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.03 4.39 11.03 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.7 4.53-4.7 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.89v2.26h3.34l-.53 3.49h-2.81V24C19.61 23.1 24 18.1 24 12.07z"/></svg>Facebook ↗</a><a class="button" href="https://www.instagram.com/khishigdelgep/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></section>
+    </main>
+    <footer><span>© 2026 KHISHIGDELGER / SYSTEM ONLINE</span><a href="#top">Дээш буцах ↑</a></footer>
+  </div>
+</body>
+</html>
